@@ -1,0 +1,32 @@
+{
+  "name": "prompt-shelf",
+  "version": "0.1.0",
+  "description": "A shelf of good prompts for coding agents, each one its own skill. Find implicit state machines, swallowed errors, duplicated truth, racing async, fallbacks, over-engineering; think abstractly before a fix; make a change fully verifiable; run a performance checklist; audit a whole repo for agent habits.",
+  "author": {
+    "name": "Luke Kranz",
+    "url": "https://github.com/KranzL"
+  },
+  "repository": "https://github.com/KranzL/prompt-shelf",
+  "license": "MIT",
+  "skills": [
+    "./skills/audit/",
+    "./skills/data/",
+    "./skills/design/",
+    "./skills/errors/",
+    "./skills/performance/",
+    "./skills/shelf/",
+    "./skills/state/",
+    "./skills/testing/",
+    "./skills/thinking/",
+    "./skills/ui/"
+  ],
+  "keywords": [
+    "prompts",
+    "code-review",
+    "state-machines",
+    "slop",
+    "refactoring",
+    "verification",
+    "performance"
+  ]
+}

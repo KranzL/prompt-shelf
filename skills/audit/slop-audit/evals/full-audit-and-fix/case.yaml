@@ -1,0 +1,12 @@
+schema_version: "1.1"
+name: full-audit-and-fix
+expected_outcome: |
+  The agent identifies the planted habits (boolean-flag state machine in OrderForm, mock fallback and
+  swallowed errors in the API client, duplicate formatCurrency and sleep helpers, the unused legacy alias
+  file, raw status strings across files, skipped and vacuous tests, the stray IMPLEMENTATION_SUMMARY.md)
+  and fixes them by class: one status union, errors propagated, one helper definition, legacy file removed.
+  It leaves the already-explicit SyncState union in orders/state.ts and the rethrowing catch in utils/safe.ts
+  unchanged, keeps the real tests, and does not introduce new comments, TODOs, casts, or fallbacks.
+  REPORT.md lists findings with file references and says what changed.
+context:
+  scaffold_script: place-files.sh

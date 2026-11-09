@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: single-pattern-state-machines
+expected_outcome: |
+  STATE_MACHINES.md names the OrderForm boolean cluster (isLoading, isSubmitting, hasError, isSuccess,
+  isDirty, canSubmit) as an implicit state machine with a transition description and at least one
+  impossible-but-reachable combination, notes the useOrders hook's loading/error/orders trio, and
+  proposes a discriminated union or reducer. It does not flag orders/state.ts, which is already an
+  explicit union, as a problem. No source files are modified.
+context:
+  scaffold_script: place-files.sh

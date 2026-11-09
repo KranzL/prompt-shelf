@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: report-only-by-model
+expected_outcome: |
+  AUDIT.md groups findings by habit, gives file:line references, and associates each habit with Claude
+  Code (Sonnet 4.x) or Codex (GPT-5 family) with an honest note on how strong the association is. It
+  covers at least five of the planted habits (mock fallback, swallowed errors, duplicate helpers, compat
+  shim, implicit state machine, weakened tests, stray summary doc, phantom lodash import). It separates
+  confirmed problems from smells and names at least one thing that looked suspicious but is fine. No
+  source files are modified.
+context:
+  scaffold_script: place-files.sh

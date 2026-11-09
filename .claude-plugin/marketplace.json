@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "prompt-shelf",
+  "description": "A shelf of good prompts for coding agents, one skill each",
+  "owner": {
+    "name": "Luke Kranz",
+    "url": "https://github.com/KranzL"
+  },
+  "plugins": [
+    {
+      "name": "prompt-shelf",
+      "source": "./",
+      "description": "A shelf of good prompts for coding agents, each one its own skill",
+      "category": "development"
+    }
+  ]
+}
